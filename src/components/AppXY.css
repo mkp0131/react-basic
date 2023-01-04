@@ -1,0 +1,18 @@
+.wrap {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.pointer {
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: -9999px;
+  top: -9999px;
+  transform: translate(-50%, -50%);
+}

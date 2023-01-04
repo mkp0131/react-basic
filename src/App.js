@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Counter from "./components/Counter";
+import { useState } from "react";
+import AppXY from "./components/AppXY";
+import Mentor from "./components/Mentor";
+import Mentors from "./components/Mentors";
+import AppTheme from "./components/AppTheme";
+import FetchApi from "./components/FetchApi";
+import BlockButton from "./components/BlockButton";
 
 function App() {
+  const [total, setTotal] = useState(0);
+
+  let flag = "asda1231da";
+  flag = null;
+  // flag = false;
+  // flag = undefined;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="text-3xl">안녕</div>
+      <BlockButton flag />
+    </>
   );
 }
 
